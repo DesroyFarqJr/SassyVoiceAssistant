@@ -12,8 +12,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
-# openai.api_key = "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"
-NEWS_API_KEY = "89451bd793f245b187e5b542ec3ee299"
+# openai.api_key = "Enter your API key here"
+NEWS_API_KEY = "ENTER YOUR OWN API KEY HERE"
 
 
 # Initialize the speech recognition and text-to-speech engines
@@ -117,7 +117,7 @@ def process_search_command(command):
         search(query)
 
 def get_news(topic):
-    url = f"https://newsapi.org/v2/top-headlines?q={topic}&apiKey=89451bd793f245b187e5b542ec3ee299"
+    url = f"https://newsapi.org/v2/top-headlines?q={topic}&apiKey={Enter your API KEY HERE}"
     response = requests.get(url)
     data = response.json()
     articles = data["articles"]
